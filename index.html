@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chemicals</title>
+        <link rel="stylesheet" href="assets\css\style.css">
+    </head>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: #1d9746;
+        }
+
+        .master-container{
+            height: 100%;
+            width: 100%;
+            align-self: center;
+            background: transparent;
+            padding: 25px 30px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <body>
+        <div class="master-container">
+            <div class="login-container" style="box-shadow: 5px 5px 15px rgb(83, 83, 83);">
+                <div class="title">Login</div>
+                    <form action="http://localhost/chemical-new/php/validate.php" method="POST">
+                        <div class="input-box">
+                            <label>Username</label>
+                            <input type="text" placeholder="Enter your username here" name="username" autocomplete="off" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter your password" name="password" autocomplete="off" required>
+                        </div>
+                        <div class="button">
+                            <button type="submit" name="update" value="">
+                                <img src="assets\icons\login.svg" alt="">  
+                                <p>Login</p>
+                            </button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

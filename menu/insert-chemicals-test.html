@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Chemicals</title>
+        <script src="..\assets\js\jquery\2.2.0\jquery.min.js"></script>
+        <link rel="stylesheet" href="..\assets\css\bootstrap\css\bootsrap.min.css" />  
+        <script src="..\assets\js\jquery\jquery.dataTables.min.js"></script>  
+        <script src="..\assets\js\jquery\dataTables.bootstrap.min.js"></script>            
+        <link rel="stylesheet" href="..\assets\css\bootstrap\css\dataTables.bootstrap.min.css" />  
+        <link rel="stylesheet" href="..\assets\css\style.css">
+    </head>
+    <body style="background-color: white;">
+        <div id="upload-chemical" class="add-entity-containers">
+            <div class="container">
+                <form action="../php/upload-chemicals.php" enctype="multipart/form-data" method="POST">
+                    <button type="button" class="close-button" onclick="closeUploadChemical()">
+                        <img src="../assets/icons/close.svg" alt="">
+                    </button>
+                    <p>Import csv file :</p>
+                    <input type="file" name="csv" id="csv" class="large"/>
+                    <div class="buttons-row">
+                        <div class="button"> 
+                            <button type="submit" id="chemical-upload">
+                                <img src="../assets/icons/upload.svg" alt="">
+                                <p>Upload File</p>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
